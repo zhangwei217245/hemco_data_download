@@ -1,0 +1,155 @@
+#------------------------------------------------------------------------------
+#                  Harvard-NASA Emissions Component (HEMCO)                   !
+#------------------------------------------------------------------------------
+#BOP
+#
+# !ROUTINE: hemcoDataDownload.rc
+#
+# !DESCRIPTION: Configuration file for the HEMCO_Data_Download script.  This
+#  file is where you specify which HEMCO data directories that you would like 
+#  0to download.
+#\\
+#\\
+# !REMARKS:
+#  To omit an inventory from being downloaded, either preface it with a
+#  comment symbol "#" or move it to the 
+#
+# !REVISION HISTORY:
+#  06 Feb 2015 - R. Yantosca - Initial version
+#EOP
+#--q----------------------------------------------------------------------------
+#BOC
+
+###############################################################################
+#                                                                             #
+#  Specify the remote and local HEMCO data paths, plus other options.         #
+#                                                                             #
+###############################################################################
+
+Remote HEMCO data path | ftp://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO
+Your HEMCO data path   | /as/scratch/bmy/HEMCO
+Verbose output         | yes
+Dryrun only?           | no
+
+
+###############################################################################
+#                                                                             #
+#  THE FOLLOWING DATA DIRECTORIES WILL BE DOWNLOADED.                         #
+#                                                                             #
+#  These data directories comprise the recommended emissions configuration    #
+#  for typical GEOS-Chem full-chemistry and specialty simulations.            #
+#                                                                             #
+###############################################################################
+
+#=============================+================================================
+# AEROSOLS                    | Directory paths
+#=============================+================================================
+AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
+Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
+DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
+GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
+Secondary organic aerosols    | $ROOT/SOA/v2014-07
+
+#=============================+================================================
+# ANTHROPOGENIC + BIOFUELS    | Directory paths
+#=============================+================================================
+GEIA global anthro            | $ROOT/GEIA/v2014-07
+GEIA NH3                      | $ROOT/NH3/v2014-07
+EDGAR global anthro           | $ROOT/EDGAR/v2014-07
+RETRO VOC emissions           | $ROOT/RETRO/v2014-07
+Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
+BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
+CAC regional anthro           | $ROOT/CAC/v2014-07
+EMEP regional anthro          | $ROOT/EMEP/v2015-01
+NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
+NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
+Streets regional anthro       | $ROOT/STREETS/v2014-07
+MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
+Yaping Xiao C2H6              | $ROOT/XIAO/v2014-09/
+
+#=============================+================================================
+# ANTHRO AIRCRAFT + SHIPS     | Directory paths
+#=============================+================================================
+AEIC aircraft                 | $ROOT/AEIC/v2014-10
+ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
+Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
+ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
+PARANOX ship plume model      | $ROOT/PARANOX/v2014-07
+
+#=============================+================================================
+# BIOMASS                     | Directory paths
+#=============================+================================================
+GFED3 biomass                 | $ROOT/GFED3/v2014-10
+
+#=============================+================================================
+# FUTURE & HISTORICAL         | Directory paths
+#=============================+================================================
+RCP future scenarios          | $ROOT/RCP/RCP26
+
+#=============================+================================================
+# HEMCO EXTENSION DATA        | Directory paths
+#=============================+================================================
+NO from lightning             | $ROOT/LIGHTNOX/v2014-07
+NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
+MEGAN biogenic emissions      | $ROOT/MEGAN/v2014-07
+
+#=============================+================================================
+# SEAWATER                    | Directory paths
+#=============================+================================================
+Acetone seawater              | $ROOT/ACET/v2014-07
+DMS seawater                  | $ROOT/DMS/v2014-07
+
+#=============================+================================================
+# SPECIALTY SIMULATIONS       | Directory paths
+#=============================+================================================
+Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
+CH4 simulation                | $ROOT/CH4/v2014-09
+CO2 simulation                | $ROOT/CO2/v2014-09
+POPs simulation               | $ROOT/POPs/v2014-09
+Mercury simulation            | $ROOT/MERCURY/v2014-09
+Tagged CO simulation          | $ROOT/TAGGED_CO/
+Tagged O3 simulation          | $ROOT/TAGGED_O3/
+O3 for offline simulations    | $ROOT/O3/v2014-09/
+OH for offline simulations    | $ROOT/OH/v2014-09
+H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
+
+#=============================+================================================
+# STRATOSPHERE                | Directory paths
+#=============================+================================================
+Stratospheric Bry data        | $ROOT/STRAT/v2015-01
+
+#=============================+================================================
+# SCALE FACTORS, MASKS, etc   | Directory paths
+#=============================+================================================
+Annual scale factors          | $ROOT/AnnualScalar/v2014-07
+Mask files                    | $ROOT/MASKS/v2014-07
+MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
+Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
+
+
+###############################################################################
+#                                                                             #
+#  THE FOLLOWING DATA DIRECTORIES WILL NOT BE DOWNLOADED.                     #
+#                                                                             #
+#  These data directories contain are optional emissions inventories that     #
+#  are not used in typical GEOS-Chem simulations.  If you wish to download    #
+#  any of these inventories, simply move the corresponding entry for each     #
+#  inventory to the previous section.                                         #
+#                                                                             #
+###############################################################################
+
+CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
+Chlorophyll A                 | $ROOT/CHLA/v2014-07
+Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
+Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
+FINN biomass                  | $ROOT/FINN/v2014-07
+GFED2 biomass                 | $ROOT/GFED2/v2014-07
+MACCITY anthro                | $ROOT/MACCITY/v2014-07
+NEI2011 regional anthro       | $ROOT/NEI2011/v2014-12
+NEI1999 regional anthro 1     | $ROOT/NEI99/200411
+NEI1999 regional anthro 2     | $ROOT/NEI99/200708
+NEI1999 regional anthro 3     | $ROOT/NEI99/200806
+QFED biomass                  | $ROOT/QFED/v2014-09
+TNO inventory                 | $ROOT/TNO/
+
+#EOC

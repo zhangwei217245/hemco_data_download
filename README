@@ -1,0 +1,145 @@
+README -- describes contents of hemco_data_download
+05 Feb 2015
+GEOS-Chem Support Team
+geos-chem-support@as.harvard.edu
+
+
+Overview:
+===============================================================================
+
+This package contains a Perl script and configuration files that let you
+download the HEMCO data directories to your local disk space.  This is a
+convenience routine.
+
+
+Files:
+===============================================================================
+
+(1) README               : This file
+
+(2) hemcoDataDownload.pl : Perl script to download HEMCO data directories
+
+(3) hemcoDataDownload.rc : Configuration file for the hemcoDataDownload.pl
+                           script.  In this file you can specify which
+                           HEMCO data directories you would like to download
+                           and which you would like to omit.
+
+(4) forTesting.rc        : A configuration file that you can use for testing
+                           or debugging.  This will tell hemcoDataDownload.pl
+                           only to download a couple of emissions inventories
+                           with files that do not take up much disk space.
+
+
+Using the script to download HEMCO emissions data:
+===============================================================================
+
+To run the script you can type:
+
+   hemcoDataDownload.pl  
+
+which will read the default "hemcoDataDownload.rc" configuration file.   
+
+You can also specify a different configuration file name as an argument
+to the script.
+
+For example, we have provided a configuration file named "forTesting.rc" 
+that you can use to test if the data is being downloaded to the right 
+directory path.  Typing:
+
+   hemcoDataDownload.pl forTesting.pl
+
+will only download a couple of data inventories that do not take up much disk
+space.  This allows you to ensure that the data transfer is sucessful without
+making you wait a long time.
+
+
+Configuration files:
+===============================================================================
+
+The configuration files are pretty much self-explanatory.  
+
+At the top of the file you will see this section:
+
+ ##############################################################################
+ #                                                                            #
+ #  Specify the remote and local HEMCO data paths, plus other options.        #
+ #                                                                            #
+ ##############################################################################
+
+ Remote HEMCO data path | ftp://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO
+ Your HEMCO data path   | /as/scratch/bmy/HEMCO
+ Verbose output         | yes
+ Dryrun only?           | no
+
+(1) The "Remote HEMCO data path" is the location on the FTP server from which
+    you are going to download the data.  This can be from either Harvard or
+    from Dalhousie.  (For now we will use the Harvard server).  You can edit
+    this accordingly.
+
+(2) The"Your HEMCO data path" specifies the root-level directory for HEMCO
+    data on your own disk space.  If you are not sure where to place this,
+    then ask your sysadmin.
+
+(3) The "Verbose output" flag lets you specify if you want to print out extra
+    output during the download process.  This can be set to either "yes" or
+    "no".
+
+(4) The "Dryrun only" flag allows you to print out the data download commands
+    without actually downloading the data.  This is useful for debugging.
+
+
+In the next section you specify all of the HEMCO inventories that you want
+to download.  You will see this header:
+
+ ##############################################################################
+ #                                                                            #
+ #  THE FOLLOWING DATA DIRECTORIES WILL BE DOWNLOADED.                        #
+ #                                                                            #
+ #  These data directories comprise the recommended emissions configuration   #
+ #  for typical GEOS-Chem full-chemistry and specialty simulations.           #
+ #                                                                            #
+ ##############################################################################
+ 
+ #=============================+===============================================
+ # AEROSOLS                    | Directory paths
+ #=============================+===============================================
+ AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
+ Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
+ DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
+ GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
+ Secondary organic aerosols    | $ROOT/SOA/v2014-07
+ 
+ ... etc...
+
+Lines starting with the comment character # will be ignored.  Each line
+specifies the name of a HEMCO emissions inventory and the data path where
+it can be found on disk, relative to the root data path.
+
+NOTE: The script will replace the $ROOT token with the value you gave to 
+the "HEMCO remote data path" above.
+
+Any inventory found in this section will be downloaded.  To prevent an 
+inventory from being downloaded you can either comment it out (i.e. place a
+# in the first column) or move the inventory to the next section.
+
+
+The final section specifies HEMCO emission inventories that you do not wish
+to download.  The section looks like this:
+
+ ##############################################################################
+ #                                                                             #
+ #  THE FOLLOWING DATA DIRECTORIES WILL NOT BE DOWNLOADED.                     #
+ #                                                                             #
+ #  These data directories contain are optional emissions inventories that     #
+ #  are not used in typical GEOS-Chem simulations.  If you wish to download    #
+ #  any of these inventories, simply move the corresponding entry for each     #
+ #  inventory to the previous section.                                         #
+ #                                                                             #
+ ##############################################################################
+ 
+ CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
+ Chlorophyll A                 | $ROOT/CHLA/v2014-07
+ Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
+ ...etc ... 
+
+-- Bob Yantosca (06 Feb 2015)

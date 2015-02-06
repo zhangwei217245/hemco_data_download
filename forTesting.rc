@@ -1,0 +1,59 @@
+#------------------------------------------------------------------------------
+#                  Harvard-NASA Emissions Component (HEMCO)                   !
+#------------------------------------------------------------------------------
+#BOP
+#
+# !ROUTINE: forTesting.rc
+#
+# !DESCRIPTION: Configuration file to test the HEMCO data downloader.
+# This will only download a couple of directories with files that do not
+# take up much size.
+#\\
+#\\
+# !REMARKS:
+#  To omit an inventory from being downloaded, either preface it with a
+#  comment symbol "#" or move it to the 
+#
+# !REVISION HISTORY:
+#  06 Feb 2015 - R. Yantosca - Initial version
+#EOP
+#--q----------------------------------------------------------------------------
+#BOC
+
+###############################################################################
+#                                                                             #
+#  Specify the remote and local HEMCO data paths, plus other options.         #
+#                                                                             #
+###############################################################################
+
+Remote HEMCO data path | ftp://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO
+Your HEMCO data path   | /as/scratch/bmy/HEMCO
+Verbose output         | yes
+Dryrun only?           | no
+
+
+###############################################################################
+#                                                                             #
+#  THE FOLLOWING DATA DIRECTORIES WILL BE DOWNLOADED.                         #
+#                                                                             #
+#  These data directories comprise the recommended emissions configuration    #
+#  for typical GEOS-Chem full-chemistry and specialty simulations.            #
+#                                                                             #
+###############################################################################
+
+### Grab these data directories for testing only ### 
+Acetone seawater              | $ROOT/ACET/v2014-07
+DMS seawater                  | $ROOT/DMS/v2014-07
+
+###############################################################################
+#                                                                             #
+#  THE FOLLOWING DATA DIRECTORIES WILL NOT BE DOWNLOADED.                     #
+#                                                                             #
+#  These data directories contain are optional emissions inventories that     #
+#  are not used in typical GEOS-Chem simulations.  If you wish to download    #
+#  any of these inventories, simply move the corresponding entry for each     #
+#  inventory to the previous section.                                         #
+#                                                                             #
+###############################################################################
+
+#EOC
