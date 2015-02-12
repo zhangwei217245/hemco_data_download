@@ -16,6 +16,7 @@
 #
 # !REVISION HISTORY:
 #  06 Feb 2015 - R. Yantosca - Initial version
+#  12 Feb 2015 - R. Yantosca - Added TIMEZONES; reorganized listing a bit
 #EOP
 #--q----------------------------------------------------------------------------
 #BOC
@@ -47,8 +48,6 @@ Dryrun only?           | no
 AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
-DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
-GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
 
 #=============================+================================================
@@ -66,7 +65,7 @@ NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
 Streets regional anthro       | $ROOT/STREETS/v2014-07
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
-Yaping Xiao C2H6              | $ROOT/XIAO/v2014-09/
+Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09/
 
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
@@ -75,7 +74,6 @@ AEIC aircraft                 | $ROOT/AEIC/v2014-10
 ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
 Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
 ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
-PARANOX ship plume model      | $ROOT/PARANOX/v2014-07
 
 #=============================+================================================
 # BIOMASS                     | Directory paths
@@ -90,9 +88,12 @@ RCP future scenarios          | $ROOT/RCP/RCP26
 #=============================+================================================
 # HEMCO EXTENSION DATA        | Directory paths
 #=============================+================================================
+DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
+GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
+MEGAN biogenic emissions      | $ROOT/MEGAN/v2014-07
 NO from lightning             | $ROOT/LIGHTNOX/v2014-07
 NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
-MEGAN biogenic emissions      | $ROOT/MEGAN/v2014-07
+PARANOX ship plume model      | $ROOT/PARANOX/v2014-07
 
 #=============================+================================================
 # SEAWATER                    | Directory paths
@@ -125,6 +126,7 @@ Stratospheric Bry data        | $ROOT/STRAT/v2015-01
 Annual scale factors          | $ROOT/AnnualScalar/v2014-07
 Mask files                    | $ROOT/MASKS/v2014-07
 MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
+Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 
