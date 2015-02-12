@@ -46,6 +46,7 @@ Dryrun only?           | no
 #=============================+================================================
 AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
+Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
@@ -140,7 +141,6 @@ Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 Chlorophyll A                 | $ROOT/CHLA/v2014-07
-Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 FINN biomass                  | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
