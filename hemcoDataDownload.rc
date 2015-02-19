@@ -17,8 +17,11 @@
 # !REVISION HISTORY:
 #  06 Feb 2015 - R. Yantosca - Initial version
 #  12 Feb 2015 - R. Yantosca - Added TIMEZONES; reorganized listing a bit
+#  17 Feb 2015 - R. Yantosca - Add Liang et al Bromocarbon species
+#  17 Feb 2015 - R. Yantosca - Group stratosphere and Bromine data together
+#  19 Feb 2015 - R. Yantosca - Now include EDGARv42, new PARANOX data
 #EOP
-#--q----------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 #BOC
 
 ###############################################################################
@@ -40,6 +43,9 @@ Dryrun only?           | no
 #  These data directories comprise the recommended emissions configuration    #
 #  for typical GEOS-Chem full-chemistry and specialty simulations.            #
 #                                                                             #
+#  NOTE: In most cases, you only have to specify the top-level folder.        #
+#  All subfolders will be downloaded automatically.                           #
+#                                                                             #
 ###############################################################################
 
 #=============================+================================================
@@ -47,7 +53,6 @@ Dryrun only?           | no
 #=============================+================================================
 AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
-Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
 
 #=============================+================================================
@@ -55,8 +60,8 @@ Secondary organic aerosols    | $ROOT/SOA/v2014-07
 #=============================+================================================
 GEIA global anthro            | $ROOT/GEIA/v2014-07
 GEIA NH3                      | $ROOT/NH3/v2014-07
-EDGAR global anthro           | $ROOT/EDGAR/v2014-07
-RETRO VOC emissions           | $ROOT/RETRO/v2014-07
+EDGAR v4.2 global anthro      | $ROOT/EDGARv42/v2015-02
+RETRO VOC emissions           | $ROOT/RETRO/v2014-07/orig_kgC
 Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
 BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
 CAC regional anthro           | $ROOT/CAC/v2014-07
@@ -93,7 +98,7 @@ GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 MEGAN biogenic emissions      | $ROOT/MEGAN/v2014-07
 NO from lightning             | $ROOT/LIGHTNOX/v2014-07
 NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
-PARANOX ship plume model      | $ROOT/PARANOX/v2014-07
+PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
 
 #=============================+================================================
 # SEAWATER                    | Directory paths
@@ -116,9 +121,11 @@ OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 
 #=============================+================================================
-# STRATOSPHERE                | Directory paths
+# STRATOSPHERIC and Br DATA   | Directory paths
 #=============================+================================================
-Stratospheric Bry data        | $ROOT/STRAT/v2015-01
+Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
+Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
+GMI strat chem mechanism      | $ROOT/GMI/v2015-02
 
 #=============================+================================================
 # SCALE FACTORS, MASKS, etc   | Directory paths
@@ -143,7 +150,9 @@ Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 Chlorophyll A                 | $ROOT/CHLA/v2014-07
+Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
+EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN biomass                  | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
