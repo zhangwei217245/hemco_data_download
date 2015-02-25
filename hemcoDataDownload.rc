@@ -20,6 +20,7 @@
 #  17 Feb 2015 - R. Yantosca - Add Liang et al Bromocarbon species
 #  17 Feb 2015 - R. Yantosca - Group stratosphere and Bromine data together
 #  19 Feb 2015 - R. Yantosca - Now include EDGARv42, new PARANOX data
+#  25 Feb 2015 - R. Yantosca - Now include new MEGAN data directory
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -95,7 +96,7 @@ RCP future scenarios          | $ROOT/RCP/RCP26
 #=============================+================================================
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
-MEGAN biogenic emissions      | $ROOT/MEGAN/v2014-07
+MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
 NO from lightning             | $ROOT/LIGHTNOX/v2014-07
 NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
