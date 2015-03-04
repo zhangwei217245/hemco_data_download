@@ -11,8 +11,12 @@
 #\\
 #\\
 # !REMARKS:
-#  To omit an inventory from being downloaded, either preface it with a
-#  comment symbol "#" or move it to the 
+#  For more information about each of these data sets, please see:
+#  http://wiki.geos-chem.org/HEMCO_data_directories
+#
+#  To omit a data set from being downloaded, either preface it with a
+#  comment symbol "#" or move it to the section titled "THE FOLLOWING DATA
+#  WILL NOT BE DOWNLOADED."
 #
 # !REVISION HISTORY:
 #  06 Feb 2015 - R. Yantosca - Initial version
@@ -21,6 +25,7 @@
 #  17 Feb 2015 - R. Yantosca - Group stratosphere and Bromine data together
 #  19 Feb 2015 - R. Yantosca - Now include EDGARv42, new PARANOX data
 #  25 Feb 2015 - R. Yantosca - Now include new MEGAN data directory
+#  04 Mar 2015 - R. Yantosca - Added UV surface albedoes
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -122,20 +127,20 @@ OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 
 #=============================+================================================
-# STRATOSPHERIC and Br DATA   | Directory paths
+# NON-EMISSIONS DATA          | Directory paths
 #=============================+================================================
 Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
+UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 
 #=============================+================================================
-# SCALE FACTORS, MASKS, etc   | Directory paths
+# OTHER INPUTS FOR HEMCO      | Directory paths
 #=============================+================================================
 Annual scale factors          | $ROOT/AnnualScalar/v2014-07
 Mask files                    | $ROOT/MASKS/v2014-07
 MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
-Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 
 ###############################################################################
@@ -163,5 +168,6 @@ NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 QFED biomass                  | $ROOT/QFED/v2014-09
 TNO inventory                 | $ROOT/TNO/
+Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 #EOC
