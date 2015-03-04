@@ -25,7 +25,7 @@
 #  17 Feb 2015 - R. Yantosca - Group stratosphere and Bromine data together
 #  19 Feb 2015 - R. Yantosca - Now include EDGARv42, new PARANOX data
 #  25 Feb 2015 - R. Yantosca - Now include new MEGAN data directory
-#  04 Mar 2015 - R. Yantosca - Added UV surface albedoes
+#  04 Mar 2015 - R. Yantosca - Added UV surface albedoes; reordered listing
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -92,14 +92,21 @@ ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
+# BROMINE                     | Directory paths
+#=============================+================================================
+Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
+
+#=============================+================================================
 # FUTURE & HISTORICAL         | Directory paths
 #=============================+================================================
-RCP future scenarios          | $ROOT/RCP/RCP26
+RCP future scenarios          | $ROOT/RCP/v2015-02
 
 #=============================+================================================
 # HEMCO EXTENSION DATA        | Directory paths
 #=============================+================================================
+Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
+DMS ocean exchange            | $ROOT/DMS/v2014-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
 NO from lightning             | $ROOT/LIGHTNOX/v2014-07
@@ -107,13 +114,7 @@ NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
 
 #=============================+================================================
-# SEAWATER                    | Directory paths
-#=============================+================================================
-Acetone seawater              | $ROOT/ACET/v2014-07
-DMS seawater                  | $ROOT/DMS/v2014-07
-
-#=============================+================================================
-# SPECIALTY SIMULATIONS       | Directory paths
+# G-C SPECIALTY SIMULATIONS   | Directory paths
 #=============================+================================================
 Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
@@ -129,9 +130,9 @@ H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 #=============================+================================================
 # NON-EMISSIONS DATA          | Directory paths
 #=============================+================================================
-Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
-Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
+Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
+Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
 UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 
 #=============================+================================================
@@ -140,7 +141,6 @@ UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 Annual scale factors          | $ROOT/AnnualScalar/v2014-07
 Mask files                    | $ROOT/MASKS/v2014-07
 MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
-Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
 
 
 ###############################################################################
