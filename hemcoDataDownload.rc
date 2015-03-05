@@ -26,6 +26,7 @@
 #  19 Feb 2015 - R. Yantosca - Now include EDGARv42, new PARANOX data
 #  25 Feb 2015 - R. Yantosca - Now include new MEGAN data directory
 #  04 Mar 2015 - R. Yantosca - Added UV surface albedoes; reordered listing
+#  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -57,7 +58,7 @@ Dryrun only?           | no
 #=============================+================================================
 # AEROSOLS                    | Directory paths
 #=============================+================================================
-AEROCOM volcano emissions     | $ROOT/VOLCANO/v2014-10
+AEROCOM volcano emissions     | $ROOT/VOLCANO/v2015-02
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
 
@@ -72,10 +73,13 @@ Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
 BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
 CAC regional anthro           | $ROOT/CAC/v2014-07
 EMEP regional anthro          | $ROOT/EMEP/v2015-01
+MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
+NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
+NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
+NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
 NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
 Streets regional anthro       | $ROOT/STREETS/v2014-07
-MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09/
 
 #=============================+================================================
@@ -97,12 +101,7 @@ GFED3 biomass                 | $ROOT/GFED3/v2014-10
 Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
 
 #=============================+================================================
-# FUTURE & HISTORICAL         | Directory paths
-#=============================+================================================
-RCP future scenarios          | $ROOT/RCP/v2015-02
-
-#=============================+================================================
-# HEMCO EXTENSION DATA        | Directory paths
+# EMISSIONS via EXTENSIONS    | Directory paths
 #=============================+================================================
 Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
@@ -114,16 +113,21 @@ NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
 
 #=============================+================================================
+# FUTURE & HISTORICAL         | Directory paths
+#=============================+================================================
+RCP future scenarios          | $ROOT/RCP/v2015-02
+
+#=============================+================================================
 # G-C SPECIALTY SIMULATIONS   | Directory paths
 #=============================+================================================
 Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
 CO2 simulation                | $ROOT/CO2/v2014-09
-POPs simulation               | $ROOT/POPs/v2014-09
 Mercury simulation            | $ROOT/MERCURY/v2014-09
+POPs simulation               | $ROOT/POPs/v2014-09
 Tagged CO simulation          | $ROOT/TAGGED_CO/
 Tagged O3 simulation          | $ROOT/TAGGED_O3/
-O3 for offline simulations    | $ROOT/O3/v2014-09/
+O3 for offline simulations    | $ROOT/O3/v2014-09
 OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 
@@ -162,7 +166,6 @@ EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN biomass                  | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
-NEI2011 regional anthro       | $ROOT/NEI2011/v2014-12
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
