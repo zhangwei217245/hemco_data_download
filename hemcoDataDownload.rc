@@ -27,6 +27,7 @@
 #  25 Feb 2015 - R. Yantosca - Now include new MEGAN data directory
 #  04 Mar 2015 - R. Yantosca - Added UV surface albedoes; reordered listing
 #  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
+#  11 Mar 2015 - R. Yantosca - Add MIX and HTAP data
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -74,6 +75,7 @@ BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
 CAC regional anthro           | $ROOT/CAC/v2014-07
 EMEP regional anthro          | $ROOT/EMEP/v2015-01
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
+MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
@@ -165,6 +167,7 @@ Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN biomass                  | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
+HTAP anthro + biofule         | $ROOT/HTAP/v2015-03
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
