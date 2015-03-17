@@ -28,6 +28,7 @@
 #  04 Mar 2015 - R. Yantosca - Added UV surface albedoes; reordered listing
 #  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
 #  11 Mar 2015 - R. Yantosca - Add MIX and HTAP data
+#  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -76,7 +77,6 @@ CAC regional anthro           | $ROOT/CAC/v2014-07
 EMEP regional anthro          | $ROOT/EMEP/v2015-01
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
-NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
@@ -95,6 +95,7 @@ ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 #=============================+================================================
 # BIOMASS                     | Directory paths
 #=============================+================================================
+GFED4 biomass                 | $ROOT/GFED4/v2015-03
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
@@ -139,6 +140,7 @@ H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
+TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2015-03
 UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 
 #=============================+================================================
@@ -167,7 +169,7 @@ Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN biomass                  | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
-HTAP anthro + biofule         | $ROOT/HTAP/v2015-03
+HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
