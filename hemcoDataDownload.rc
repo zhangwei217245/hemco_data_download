@@ -29,6 +29,7 @@
 #  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
 #  11 Mar 2015 - R. Yantosca - Add MIX and HTAP data
 #  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
+#  17 Mar 2015 - R. Yantosca - Now retire VISTAS, it was only used w/ NEI2005
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -80,7 +81,6 @@ MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
-NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
 Streets regional anthro       | $ROOT/STREETS/v2014-07
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09/
 
@@ -176,6 +176,7 @@ NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 QFED biomass                  | $ROOT/QFED/v2014-09
 TNO inventory                 | $ROOT/TNO/
+NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 #EOC
