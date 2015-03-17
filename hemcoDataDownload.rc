@@ -29,7 +29,7 @@
 #  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
 #  11 Mar 2015 - R. Yantosca - Add MIX and HTAP data
 #  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
-#  17 Mar 2015 - R. Yantosca - Now retire VISTAS, it was only used w/ NEI2005
+!  17 Mar 2015 - R. Yantosca - Add CHLA data
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -78,7 +78,8 @@ CAC regional anthro           | $ROOT/CAC/v2014-07
 EMEP regional anthro          | $ROOT/EMEP/v2015-01
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
-NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
+NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
+NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
 Streets regional anthro       | $ROOT/STREETS/v2014-07
@@ -130,6 +131,7 @@ Mercury simulation            | $ROOT/MERCURY/v2014-09
 POPs simulation               | $ROOT/POPs/v2014-09
 Tagged CO simulation          | $ROOT/TAGGED_CO/
 Tagged O3 simulation          | $ROOT/TAGGED_O3/
+Chlorophyll A                 | $ROOT/CHLA/v2014-07
 O3 for offline simulations    | $ROOT/O3/v2014-09
 OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
@@ -163,7 +165,6 @@ MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
 ###############################################################################
 
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
-Chlorophyll A                 | $ROOT/CHLA/v2014-07
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
@@ -174,9 +175,9 @@ MACCITY anthro                | $ROOT/MACCITY/v2014-07
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
+NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 QFED biomass                  | $ROOT/QFED/v2014-09
 TNO inventory                 | $ROOT/TNO/
-NEI/VISTAS scale factors      | $ROOT/VISTAS/v2014-07
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 
 #EOC
