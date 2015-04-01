@@ -31,6 +31,7 @@
 #  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
 #  17 Mar 2015 - R. Yantosca - Add CHLA data
 #  01 Apr 2015 - R. Yantosca - Now get data in EMEP/v2015-03 by default
+#   1 Apr 2015 - R. Yantosca - Now get NEI2011_ag_only/v2015-03
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -82,7 +83,7 @@ MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
-NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
+NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Streets regional anthro       | $ROOT/STREETS/v2014-07
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 
