@@ -29,7 +29,8 @@
 #  05 Mar 2015 - R. Yantosca - Now read eruptive & degassing volcano data
 #  11 Mar 2015 - R. Yantosca - Add MIX and HTAP data
 #  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
-!  17 Mar 2015 - R. Yantosca - Add CHLA data
+#  17 Mar 2015 - R. Yantosca - Add CHLA data
+#  01 Apr 2015 - R. Yantosca - Now get data in EMEP/v2015-03 by default
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -75,7 +76,7 @@ RETRO VOC emissions           | $ROOT/RETRO/v2014-07/orig_kgC
 Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
 BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
 CAC regional anthro           | $ROOT/CAC/v2014-07
-EMEP regional anthro          | $ROOT/EMEP/v2015-01
+EMEP regional anthro          | $ROOT/EMEP/v2015-03
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
@@ -83,7 +84,7 @@ NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-02
 Streets regional anthro       | $ROOT/STREETS/v2014-07
-Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09/
+Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
@@ -129,8 +130,8 @@ CH4 simulation                | $ROOT/CH4/v2014-09
 CO2 simulation                | $ROOT/CO2/v2014-09
 Mercury simulation            | $ROOT/MERCURY/v2014-09
 POPs simulation               | $ROOT/POPs/v2014-09
-Tagged CO simulation          | $ROOT/TAGGED_CO/
-Tagged O3 simulation          | $ROOT/TAGGED_O3/
+Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
+Tagged O3 simulation          | $ROOT/TAGGED_O3/v2014-09
 Chlorophyll A                 | $ROOT/CHLA/v2014-07
 O3 for offline simulations    | $ROOT/O3/v2014-09
 OH for offline simulations    | $ROOT/OH/v2014-09
