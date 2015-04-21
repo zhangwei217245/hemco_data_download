@@ -31,7 +31,9 @@
 #  17 Mar 2015 - R. Yantosca - Add TOMS/SBUV and GFED4 data
 #  17 Mar 2015 - R. Yantosca - Add CHLA data
 #  01 Apr 2015 - R. Yantosca - Now get data in EMEP/v2015-03 by default
-#   1 Apr 2015 - R. Yantosca - Now get NEI2011_ag_only/v2015-03
+#  01 Apr 2015 - R. Yantosca - Now get NEI2011_ag_only/v2015-03
+#  21 Apr 2015 - R. Yantosca - Now get AEIC/v2015-01 and CO2/v2015-04
+!  21 Apr 2015 - R. Yantosca - Now get NEI2011/v2015-03 instead of v2015-02
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -82,7 +84,7 @@ MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
-NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-02
+NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Streets regional anthro       | $ROOT/STREETS/v2014-07
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
@@ -90,7 +92,7 @@ Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
 #=============================+================================================
-AEIC aircraft                 | $ROOT/AEIC/v2014-10
+AEIC aircraft                 | $ROOT/AEIC/v2015-01
 ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
 Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
 ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
@@ -128,7 +130,7 @@ RCP future scenarios          | $ROOT/RCP/v2015-02
 #=============================+================================================
 Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
-CO2 simulation                | $ROOT/CO2/v2014-09
+CO2 simulation                | $ROOT/CO2/v2015-04
 Mercury simulation            | $ROOT/MERCURY/v2014-09
 POPs simulation               | $ROOT/POPs/v2014-09
 Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
