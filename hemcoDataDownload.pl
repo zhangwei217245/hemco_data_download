@@ -210,6 +210,10 @@ sub downloadHemcoData(%) {
 #
 # !REVISION HISTORY:
 #  06 Feb 2015 - R. Yantosca - Initial version
+#  19 May 2015 - R. Yantosca - Add -c, which will continue getting a partially 
+#                              downloaded file from a previous wget operation
+#  19 May 2015 - R. Yantosca - Add -N, which turns on timestamping, so that
+#                              wget can only get the newer data files
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -244,7 +248,7 @@ sub downloadHemcoData(%) {
     $invPath =~ s/\$ROOT/$HEMCO_REMOTE_ROOT/g;
 
     # Create the command for the data download via wget
-    $cmd = qq/cd $HEMCO_LOCAL_ROOT; wget -r -nH -q --cut-dirs=$cutDirs "$invPath"; cd $refDir/;
+    $cmd = qq/cd $HEMCO_LOCAL_ROOT; wget -r -nH -c -N -q --cut-dirs=$cutDirs "$invPath"; cd $refDir/;
 
     # Download the data!
     if ( $DRYRUN =~ m/[Nn][Oo]/ ) {
