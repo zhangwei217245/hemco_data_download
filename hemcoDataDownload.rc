@@ -35,6 +35,8 @@
 #  21 Apr 2015 - R. Yantosca - Now get AEIC/v2015-01 and CO2/v2015-04
 #  21 Apr 2015 - R. Yantosca - Now get NEI2011/v2015-03 instead of v2015-02
 #  28 Apr 2015 - R. Yantosca - Now get COUNTRY_ID/v2015-04 
+#  05 Jun 2015 - R. Yantosca - Now get the officially-released GFED4 data
+#                              product in GFED4/v2015-06
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -101,7 +103,7 @@ ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 #=============================+================================================
 # BIOMASS                     | Directory paths
 #=============================+================================================
-GFED4 biomass                 | $ROOT/GFED4/v2015-03
+GFED4 biomass                 | $ROOT/GFED4/v2015-06
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
